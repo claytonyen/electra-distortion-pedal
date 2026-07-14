@@ -42,3 +42,10 @@ The LTSpice circuit and simulation as well as the breadboarded second attempt ci
 
 The fast signal clipping is extremely obvious in the recording: ![Audio Link for Second Attempt](https://github.com/user-attachments/assets/4f2f4957-5563-4e54-833a-506f67e552d7)
 
+The silicon diodes only turn on at the very peaks of the wave. For most of the cycle, the diodes are completely off, allowing the transistor switch very fast. The germanium and
+Schottyky diodes, however, start conducting a tiny bit of current early on and gradually conduct more as the voltage rises. Since they are conducting during almost the entire cycle,
+The 100nF capacitor need to charge and discharge more, making slightly flattening steeper changes.
+
+![FFT Comp](images/Att1-Att2-FFT-Comparison.png)
+
+This is evident when I compare the twos FFTs. 
